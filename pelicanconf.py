@@ -33,11 +33,12 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-pelican content 
-cd output 
-start "" "http://localhost:800/" 
+STATIC_PATHS = ['img', 'pdf']
 
-python -m pelican.server 
+MARKUP = ('md', 'ipynb') 
+
+PLUGIN_PATH = './plugins' 
+PLUGINS = ['ipynb.markup'] 
 
 #Themes
 THEME = 'Flex'
