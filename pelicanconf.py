@@ -40,8 +40,21 @@ MARKUP = ('md', 'ipynb')
 PLUGIN_PATH = './plugins' 
 PLUGINS = ['ipynb.markup'] 
 
-#Themes
+# THEMES: Here is me playing with a few themes
+
+#Uncomment for Flex
+PLUGIN_PATH = './plugins'
+PLUGINS = ['ipynb.markup']
 THEME = 'Flex'
-STATIC_PATHS = ['img', 'static']
-FAVICON = 'img/jsteinpic.jpg'
-CUSTOM_CSS = 'static/custom.css'
+STATIC_PATHS = ['img']
+
+AUTHOR = 'Jeanette Stein'
+SITEURL = 'https://datastein.github.io'
+SITENAME = 'Jeanette\'s Data Blog'
+SITETITLE = 'Jeanette\'s Data Blog'
+SITESUBTITLE = 'Blogging in Seattle'
+SITEDESCRIPTION = 'Jeanette\'s Thoughts and Writings'
+SITELOGO = SITEURL + '/images/JS_profile.png'
+
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/mjeanettestein/'),
+          ('github', 'https://github.com/datastein'))
