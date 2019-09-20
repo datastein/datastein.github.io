@@ -33,6 +33,11 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
+pelican content 
+cd output 
+start "" "http://localhost:800/" 
+
+python -m pelican.server 
 
 #Themes
 THEME = 'Flex'
