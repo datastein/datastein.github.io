@@ -1,0 +1,14 @@
+beautifulsoup4~=4.3.2
+feedgenerator~=1.7
+html5lib~=0.999
+Markdown==2.6.6
+Pygments~=2.0.2
+pyreadline~=2.0
+smartypants~=1.8.6
+typogrify~=2.0.7
+gitpython
+jupyter>=1.0
+ipython>=4.0
+nbconvert>=4.0
+matplotlib==1.5.1
+
