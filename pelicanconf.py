@@ -55,6 +55,7 @@ SITETITLE = 'Jeanette\'s Data Blog'
 SITESUBTITLE = 'Blogging in Seattle'
 SITEDESCRIPTION = 'Jeanette\'s Thoughts and Writings'
 SITELOGO = SITEURL + '/images/JS_profile.png'
+BROWSER_COLOR = '#2B3856'
 
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/mjeanettestein/'),
           ('github', 'https://github.com/datastein'))
