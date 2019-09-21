@@ -22,6 +22,15 @@
 
 
 
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2B3856">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2B3856">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#2B3856">
 
 <meta name="author" content="Jeanette Stein" />
 <meta name="description" content="This blog post addresses how to start a data science blog on the Window&#39;s platform and highlights some of the unique issues one might face." />
@@ -1201,7 +1210,7 @@ h6:hover .anchor-link {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="-Building-a-Data-Science-Blog-on-the-Window's-platform-using-Anaconda,-Pelican,-and-Github-"><span style="color:#E56717"> Building a Data Science Blog on the Window's platform using Anaconda, Pelican, and Github </span><a class="anchor-link" href="#-Building-a-Data-Science-Blog-on-the-Window's-platform-using-Anaconda,-Pelican,-and-Github-">&#182;</a></h1><p>There are many great reasons that a Data Science blog might be conducive to your career. The first reason is that it allows potential employers or collaborators a chance to see that you possess a strong aptitude for unique problem solving that often can’t be achieved during a relatively short interview. It also allows one to see whether you possess an ability to clearly articulate your data interpretation and statistical methods effectively.  In a world where your statistics can be on-point and you can use the best methods and yet still have the wrong answer, it is important that you clearly lay out your hypotheses and assumptions to your readers and reviewers.</p>
+<p>There are many great reasons that a Data Science blog might be conducive to your career. The first reason is that it allows potential employers or collaborators a chance to see that you possess a strong aptitude for unique problem solving that often can’t be achieved during a relatively short interview. It also allows one to see whether you possess an ability to clearly articulate your data interpretation and statistical methods effectively.  In a world where your statistics can be on-point and you can use the best methods and yet still have the wrong answer, it is important that you clearly lay out your hypotheses and assumptions to your readers and reviewers.</p>
 <p>That said, we need a means of getting said blog up-and-running.  When I started this blog, I wanted the fastest way to create beautiful content with a minimum of trouble. I also wanted an easy way to demonstrate what my code looks like to an outside reader. Thus, I turned to the use of a static site generator.  While there are few different generators that I could have used, I have been spending a lot of time on <a href="https://github.com/">GitHub</a> and <a href="https://jupyter.org/">Jupyter</a> recently. Therefore, I have chosen to use <a href="http://docs.getpelican.com/en/stable/">Pelican</a> which is written in Python. This is a great tool that makes if very easy to generate a beautiful looking blog.</p>
 <p>While there are several really great blogs out there that cover how to generate a static website on Pelican, there are relatively few that cover building a static website in the Windows environment with Anaconda Python distribution.</p>
 <h2 id="-Requirements"><span style="color: #E56717"> Requirements</span><a class="anchor-link" href="#-Requirements">&#182;</a></h2><hr>
@@ -1211,33 +1220,34 @@ h6:hover .anchor-link {
 <li>Set up a virtual environment</li>
 <li>Install Pelican Package</li>
 </ol>
-<h3 id="-1.-Install-Python-"><span style="color:#786D5F"> 1. Install Python </span><a class="anchor-link" href="#-1.-Install-Python-">&#182;</a></h3><p>Assuming you are starting at square one, you might first need to install Python. I recommend using <mark><span style = "color:#9F000F"> Anaconda </span></mark> Python Distribution.  There are two ways to start on Windows:</p>
+<h3 id="-1.-Install-Python-"><span style="color:#786D5F"> 1. Install Python </span><a class="anchor-link" href="#-1.-Install-Python-">&#182;</a></h3><p>Assuming you are starting at square one, you might first need to install Python. I recommend using <span style = "color:#9F000F"> Anaconda </span> Python Distribution.  There are two ways to start on Windows:</p>
 <ol>
-<li>Get the <mark><span style = "color:#9F000F"> Anaconda Navigator</span></mark> ap from the appstore and follow the installation instructions.</li>
+<li>Get the <span style = "color:#9F000F"> Anaconda Navigator</span> ap from the appstore and follow the installation instructions.</li>
 <li>Download the <a href="http://anaconda.com/downloads">Anaconda Installer</a> directly. Follow the installation instructions for Windowns available on the Windows download page. </li>
 </ol>
-<p>Once you have things downloaded, check that things are working right by using command prompt language. <mark><span style = "color:#9F000F"> 'Right click' </span></mark> on the <mark><span style = "color:#9F000F">Start menu</span></mark> and select <mark><span style = "color:#9F000F"> Command Prompt</span></mark> . Start the Python interpreter by typing: <span style="background-color: Black"><span style = "color: White"> **>    Python**</span>&lt;/span&gt;. You should see a message that matches the version of Anaconda installed:</p>
+<p>Once you have things downloaded, check that things are working right by using command prompt language. <span style = "color:#9F000F"> 'Right click' </span> on the <span style = "color:#9F000F">Start menu</span> and select <span style = "color:#9F000F"> Command Prompt</span> or <span style = "color:#9F000F"> Anaconda Prompt</span>. Start the Python interpreter by typing: <span style="background-color: Black"><span style = "color: White"> **> Python**</span>&lt;/span&gt;.</p>
+<p>You should see a message that matches the version of Anaconda installed:</p>
 <div style="background-color: black; color:White ; padding: 10px; border: 1px solid white;">
-c:\Users\wesm=python 
+c:\Users\jstein=python 
 <br>Python 3.5.2 [Anaconda 4.1.1 (64-bit)\ (default, Jul 5 2016, 11:41:13)
-</div><p>To leave the Python shell, press <mark><span style = "color:#9F000F"> Ctrl+D </span></mark> or type the command <span style="background-color: Black"><span style = "color: White"> > **exit ()**  </span>&lt;/span&gt;</p>
+</div><p>To leave the Python shell, press <span style = "color:#9F000F"> Ctrl+D </span> or type the command <span style="background-color: Black"><span style = "color: White"> > exit ()  </span>&lt;/span&gt;</p>
 <p>To verify that <strong>Anaconda</strong> has installed properly, from the Windows command shell type:</p>
-<blockquote><p><span style="background-color: Black"><span style = "color: White"> conda info --all </span>&lt;/span&gt;</p>
-</blockquote>
-<p>It should print out a notification on the version and type of Anaconda installed.</p>
-<h3 id="-2.-Set-up-a-virtual-environment-"><span style="color:#786D5F"> 2. Set up a virtual environment </span><a class="anchor-link" href="#-2.-Set-up-a-virtual-environment-">&#182;</a></h3><p>Before we get started making changes to our new tools, we should set up a virtual environment using <mark><span style = "color:#9F000F">VirtualEnv</span></mark>. A virtual enviroment is an isolated python environement where you can protect your source code from Python library/package dependancy conflicts. This environment contains a fresh copy of the Python binary with its own copy of the Python standard library. Read more about it <a href="https://pythontips.com/2013/07/30/what-is-virtualenv/">here</a>.</p>
-<p>For this step, let's create a virtual environment called  <mark><span style = "color:#9F000F">Pelican1</span></mark>. Open up the Anaconda terminal from the Start menu and type the following:</p>
+<div style="background-color: black; color:White ; padding: 10px; border: 1px solid white;">
+conda info --all 
+</div><p>It should print out a notification on the version and type of Anaconda installed.</p>
+<h3 id="-2.-Set-up-a-virtual-environment-"><span style="color:#786D5F"> 2. Set up a virtual environment </span><a class="anchor-link" href="#-2.-Set-up-a-virtual-environment-">&#182;</a></h3><p>Before we get started making changes to our new tools, we should set up a virtual environment using <span style = "color:#9F000F">VirtualEnv</span>. A virtual enviroment is an isolated python environement where you can protect your source code from Python library/package dependancy conflicts. This environment contains a fresh copy of the Python binary with its own copy of the Python standard library. Read more about it <a href="https://pythontips.com/2013/07/30/what-is-virtualenv/">here</a>.</p>
+<p>For this step, let's create a virtual environment called  <span style = "color:#9F000F">pelicanTemp</span>. Open up the Anaconda terminal from the Start menu and type the following:</p>
 <div style="background-color: #D1D0CE ; padding: 10px; border: 1px solid #625D5D;">
-conda create -n pelican1 python=2
-</div><p>Once this environment is created, you can enter and leave the <mark><span style = "color:#9F000F">Pelican1</span></mark> environment again at will by typing, respectively:</p>
+conda create -n pelicanTemp python=2
+</div><p>Once this environment is created, you can enter and leave the <span style = "color:#9F000F">PelicanTemp</span> environment again at will by typing, respectively:</p>
 <div style="background-color: #D1D0CE ; padding: 10px; border: 1px solid #625D5D;">
-activate pelican1
+conda activate pelicanTemp
 </div><p>or</p>
 <div style="background-color: #D1D0CE ; padding: 10px; border: 1px solid #625D5D;">
 conda deactivate 
-</div><p>While you are in the <mark><span style = "color:#9F000F">Pelican1</span></mark> environment, you should see the following text at the command prompt:</p>
+</div><p>While you are in the <span style = "color:#9F000F">pelicanTemp</span> environment, you should see the following text at the command prompt:</p>
 <div style="background-color: #D1D0CE ; padding: 10px; border: 1px solid #625D5D;">
-(pelican1) C:\Users\mj_st>
+(pelicanTemp) C:\Users\mj_st>
 </div><h3 id="-3.-Install-Pelican-"><span style="color:#786D5F"> 3. Install Pelican </span><a class="anchor-link" href="#-3.-Install-Pelican-">&#182;</a></h3><p>We are now ready to install the <strong>Pelican</strong> package. From inside your Pelican virtual environment,execute:</p>
 <div style="background-color: #D1D0CE ; padding: 10px; border: 1px solid #625D5D;">pip install pelican markdown</div><p>Once Pelican is installed, continue the blog set-up by doing the following:
 <br></p>
@@ -1254,7 +1264,7 @@ conda deactivate
 <li>Create a file in your blog folder called '.gitignore' and add the content from <a href="https://github.com/github/gitignore/blob/master/Python.gitignore">this file</a>
 <br>
 <br></li>
-<li>Create a file called  <mark><span style = "color:#9F000F">'requirements.txt'</span></mark> in WordPad (or similar text editor). We will use this file to store a list of packages that will make developing and publishing a <strong>Pelican</strong> blog site easier. From your text editor, add:</li>
+<li>Create a file called  <span style = "color:#9F000F">'requirements.txt'</span>&lt;/mark&gt; in WordPad (or similar text editor). We will use this file to store a list of packages that will make developing and publishing a <strong>Pelican</strong> blog site easier. From your text editor, add:</li>
 </ul>
 <div style="background-color: #D1D0CE ; padding: 10px; border: 1px solid #625D5D;">
 beautifulsoup4~=4.3.2
@@ -1281,7 +1291,7 @@ If you have any other platform **BUT** Windows you can add in a line such as `gh
 Save the <mark><span style = "color:#9F000F">'requirements.txt'</span></mark> file in your blog folder. From the Anaconda shell, run:
 <br>
 <br>
-<div style="background-color: #D1D0CE ; padding: 10px; border: 1px solid #625D5D;"> pip install -r requirements.txt</div><h2 id="Create-your-Data-Science-Blog-"><span style="color: #E56717">Create your Data Science Blog </span><a class="anchor-link" href="#Create-your-Data-Science-Blog-">&#182;</a></h2><p>Once you have the basic set-up online, you should be all set to create your first blog! To do this type <code>pelican-quicstart</code> when you are in DS_blog folder. This will activate the pelican interface. For the majority of the answers, go ahead and just hit <code>Enter</code> and accept the default value. The ones that you <strong>don't</strong> want to accept as default are:</p>
+<div style="background-color: #D1D0CE ; padding: 10px; border: 1px solid #625D5D;"> pip install -r requirements.txt</div><h2 id="Create-your-Data-Science-Blog-"><span style="color: #E56717">Create your Data Science Blog </span><a class="anchor-link" href="#Create-your-Data-Science-Blog-">&#182;</a></h2><p>Once you have the basic set-up online, you should be all set to create your first blog! To do this type <code>pelican-quickstart</code> when you are in DS_blog folder. This will activate the pelican interface. For the majority of the answers, go ahead and just hit <code>Enter</code> and accept the default value. The ones that you <strong>don't</strong> want to accept as default are:</p>
 <ol>
 <li>Title of the Website</li>
 <li>The author of the website, </li>
@@ -1318,8 +1328,7 @@ needed by Pelican.
 <br>> Do you want to upload your website using GitHub Pages? (y/N)</FONT>
 </div>
 <br></p>
-<p>After running the <code>pelican-quickstart</code> function, you should have two new folders in your DS_Blog folder: <span style = "background-color:#D1D0CE">'Content'</span> and <span style = "background-color:#D1D0CE">'Output'</span>, along with a few extra files: <span style = "background-color:#D1D0CE">'pelicanconf.py'</span> and <span style = "background-color:#D1D0CE">'publishconfig.py'</span>.</p>
-
+<h2 id="After-running-the-pelican-quickstart-function,-you-should-have-two-new-folders-in-your-DS_Blog-folder:-'Content'-and-'Output',-along-with-a-few-extra-files:-'pelicanconf.py'-and-'publishconfig.py'.">After running the <code>pelican-quickstart</code> function, you should have two new folders in your DS_Blog folder: <span style="background-color:#D1D0CE">'Content'</span> and <span style="background-color:#D1D0CE">'Output'</span>, along with a few extra files: <span style="background-color:#D1D0CE">'pelicanconf.py'</span> and <span style="background-color:#D1D0CE">'publishconfig.py'</span>.<a class="anchor-link" href="#After-running-the-pelican-quickstart-function,-you-should-have-two-new-folders-in-your-DS_Blog-folder:-'Content'-and-'Output',-along-with-a-few-extra-files:-'pelicanconf.py'-and-'publishconfig.py'.">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -1347,7 +1356,7 @@ MARKUP = ('md', 'ipynb')
 <ol>
 <li>Sign up for a Github account as shown above.</li>
 <li>Follow the directions to create a repository called <code>username.github.io</code> where  <code>username</code> is your GitHub username.</li>
-<li>From the Anaconda Navigator app, open up a Jupyter Notebook and create some basic content in Markdown. Save the file as a <code>.ipynb</code> file.</li>
+<li>From the Anaconda Navigator app, open up a Jupyter Notebook and create some basic content in Markdown. Save the file as a <code>.ipynb</code> file in the <code>content</code> folder of your blog.</li>
 <li>Create an <code>nbdata</code> file that has the following structures with your own specifics:</li>
 </ol>
 <p><br></p>
@@ -1374,7 +1383,7 @@ Title: Some Post
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In order to activate the plugin we need to modify the <span style = "background-color:#D1D0CE">'pelicanconf.py'</span> folder and add these lines at the bottom:
+<p>In order to activate the plugin we need to modify the <span style = "background-color:#D1D0CE">'pelicanconf.py'</span> folder  in your main blog folder and add these lines at the bottom:
 <br></p>
 <p><div style="background-color: black; color: white ;  padding: 10px; border: 1px solid #625D5D;"> <FONT FACE = "terminal"> 
 <br>pelican content
@@ -1392,12 +1401,12 @@ You should now see the default skeleton and template for the first blog post.</p
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-Commit-your-Files-to-GitHub-"><span style="color: #E56717"> Commit your Files to GitHub </span><a class="anchor-link" href="#-Commit-your-Files-to-GitHub-">&#182;</a></h2><p>In order to get your files loaded onto GitHub, you need to creat a local git repo:</p>
+<h2 id="-Commit-your-Files-to-GitHub-"><span style="color: #E56717"> Commit your Files to GitHub </span><a class="anchor-link" href="#-Commit-your-Files-to-GitHub-">&#182;</a></h2><p>In order to get your files loaded onto GitHub, you need to create a local git repo:</p>
 <div style="background-color: black; color: white ;  padding: 10px; border: 1px solid #625D5D;"> <FONT FACE = "terminal"> git Init</FONT></div><p>Next, you can connect to the repo that you created when we signed up for GitHub:</p>
 <div style="background-color: black; color: white ;  padding: 10px; border: 1px solid #625D5D;"> <FONT FACE = "terminal"> 
 git remote add origin https://github.com/username/username.github.io.git
 <br>git remote -v
-</FONT></div><p>Go ahead and create a new branch now for the pelcian Source:</p>
+</FONT></div><p>Go ahead and create a new branch now for the pelican source:</p>
 <div style="background-color: black; color: white ;  padding: 10px; border: 1px solid #625D5D;"> <FONT FACE = "terminal"> 
 git checkout -b pelican
 </FONT></div><p>Now that we have a connection to GitHub, we need to modify the configuration of your Pelican blog so that the URLs navigate correctly:</p>
