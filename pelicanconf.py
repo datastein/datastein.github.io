@@ -125,9 +125,9 @@ AUTHORS_BIO = {
 
     "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
 
-    "image": "assets/images/avatar.png",
+    "image": "img/Seattle_Skyline_F.jpg",
 
-    "website": "http://blog.arulraj.net",
+    "website": "https://datastein.github.io",
 
     "linkedin": "unavailable",
 
