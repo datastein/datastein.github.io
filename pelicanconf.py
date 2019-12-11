@@ -123,25 +123,10 @@ AUTHORS_BIO = {
 
     "image": "assets/images/avatar.png",
 
-    "website": "http://blog.arulraj.net",
-
-    "linkedin": "unavailable",
-
-    "github": "arulrajnet",
-
-    "location": "Chennai",
-
     "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
 
   }
 
 }
 
-
-
-COLOR_SCHEME_CSS = 'github.css'
-
-
-
-CSS_OVERRIDE = ['assets/css/myblog.css']
 
