@@ -102,7 +102,6 @@ SITEMAP = {
         'pages': 'monthly'
 
     }
-
 }
 ### Theme specific settings
 # To set background image for the home page.
@@ -116,7 +115,7 @@ SITEAUT = SITEURL + '/img/jsteinpic.jpg'
 
 
 
-HEADER_COVERS_BY_TAG = {'cupcake': 'assets/images/rainbow_cupcake_cover.png', 'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
+HEADER_COVERS_BY_TAG = {'cupcake': SITEAUT, 'general':HOME_COVER}
 
 
 
@@ -126,7 +125,7 @@ AUTHORS_BIO = {
 
     "name": "Zutrinken",
 
-    "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+    "cover": HOME_COVER,
 
     "image": SITEAUT,
 
