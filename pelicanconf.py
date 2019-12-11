@@ -76,6 +76,8 @@ PLUGINS = [
 
 
 # Sitemap
+SITEURL = 'https://datastein.github.io'
+SITEPIC= SITEURL + '/img/Seattle_Skyline_F.jpg'
 
 SITEMAP = {
 
@@ -105,7 +107,8 @@ SITEMAP = {
 ### Theme specific settings
 # To set background image for the home page.
 
-HOME_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
+HOME_COVER = SITEPIC
+SITEAUT = SITEURL + '/img/jsteinpic.jpg'
 
 
 
@@ -125,7 +128,7 @@ AUTHORS_BIO = {
 
     "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
 
-    "image": "img/Seattle_Skyline_F.jpg",
+    "image": SITEAUT,
 
     "website": "https://datastein.github.io",
 
