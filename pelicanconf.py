@@ -55,6 +55,7 @@ SITETITLE = 'Jeanette\'s Data Blog'
 SITESUBTITLE = 'Blogging in Seattle'
 SITEDESCRIPTION = 'Jeanette\'s Thoughts and Writings'
 SITELOGO = "JS_profile.png"
+FAVICON = "JS_profile.png"
 #SITELOGO = SITEURL + 'pelican/img/JS_profile.png'
 #SITELOGO = SITEURL + '/images/JS_profile.png'
 BROWSER_COLOR = '#1569C7'
