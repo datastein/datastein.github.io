@@ -63,20 +63,45 @@ PLUGINS = ['ipynb.markup']
 
 #Uncomment for attila theme
 PLUGIN_PATH = './plugins'
-PLUGINS = ['ipynb.markup','sitemap']
-THEME = 'attila'
-STATIC_PATHS = ['img']
+PLUGINS = [
+
+  'sitemap',
+
+  'neighbors',
+
+  'assets'
+
+]
+
+
+
+# Sitemap
 
 SITEMAP = {
+
     'format': 'xml',
+
     'priorities': {
-        'articles': 1,
+
+        'articles': 0.5,
+
         'indexes': 0.5,
-        'pages': 0.5,
+
+        'pages': 0.5
+
     },
+
     'changefreqs': {
-        'articles': 'always',
-        'indexes': 'hourly',
+
+        'articles': 'monthly',
+
+        'indexes': 'daily',
+
         'pages': 'monthly'
+
     }
+
 }
+
+HOME_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
+
