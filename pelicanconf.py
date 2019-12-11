@@ -105,28 +105,3 @@ SITEMAP = {
 
 HOME_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
 
-# Custom Header
-
-
-
-HEADER_COVERS_BY_TAG = {'cupcake': 'assets/images/rainbow_cupcake_cover.png', 'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
-
-
-
-AUTHORS_BIO = {
-
-  "zutrinken": {
-
-    "name": "Zutrinken",
-
-    "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
-
-    "image": "assets/images/avatar.png",
-
-    "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
-
-  }
-
-}
-
-
