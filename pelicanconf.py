@@ -105,3 +105,43 @@ SITEMAP = {
 
 HOME_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
 
+# Custom Header
+
+
+
+HEADER_COVERS_BY_TAG = {'cupcake': 'assets/images/rainbow_cupcake_cover.png', 'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
+
+
+
+AUTHORS_BIO = {
+
+  "zutrinken": {
+
+    "name": "Zutrinken",
+
+    "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+
+    "image": "assets/images/avatar.png",
+
+    "website": "http://blog.arulraj.net",
+
+    "linkedin": "unavailable",
+
+    "github": "arulrajnet",
+
+    "location": "Chennai",
+
+    "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
+
+  }
+
+}
+
+
+
+COLOR_SCHEME_CSS = 'github.css'
+
+
+
+CSS_OVERRIDE = ['assets/css/myblog.css']
+
