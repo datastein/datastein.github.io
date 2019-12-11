@@ -43,66 +43,21 @@ PLUGINS = ['ipynb.markup']
 # THEMES: Here is me playing with a few themes
 
 #Uncomment for Flex
-#PLUGIN_PATH = './plugins'
-#PLUGINS = ['ipynb.markup']
-#THEME = 'Flex'
-#STATIC_PATHS = ['img']
-
-#AUTHOR = 'Jeanette Stein'
-#SITEURL = 'https://datastein.github.io'
-#SITENAME = 'Jeanette\'s Data Blog'
-#SITETITLE = 'Jeanette\'s Data Blog'
-#SITESUBTITLE = 'Blogging in Seattle'
-#SITEDESCRIPTION = 'Jeanette\'s Thoughts and Writings'
-#SITELOGO = SITEURL + '/img/JS_profile.png'
-##SITELOGO = SITEURL + '/images/JS_profile.png'
-#BROWSER_COLOR = '#1569C7'
-
-#SOCIAL = (('linkedin', 'https://www.linkedin.com/in/mjeanettestein/'),
-#         ('github', 'https://github.com/datastein'))
-
-#Uncomment for attila theme
-THEME = 'attila'
 PLUGIN_PATH = './plugins'
-PLUGINS = [
+PLUGINS = ['ipynb.markup']
+THEME = 'Flex'
+STATIC_PATHS = ['img']
 
-  'sitemap',
+AUTHOR = 'Jeanette Stein'
+SITEURL = 'https://datastein.github.io'
+SITENAME = 'Jeanette\'s Data Blog'
+SITETITLE = 'Jeanette\'s Data Blog'
+SITESUBTITLE = 'Blogging in Seattle'
+SITEDESCRIPTION = 'Jeanette\'s Thoughts and Writings'
+SITELOGO = SITEURL + '/img/JS_profile.png'
+#SITELOGO = SITEURL + '/images/JS_profile.png'
+BROWSER_COLOR = '#1569C7'
 
-  'neighbors',
-
-  'assets'
-
-]
-
-
-
-# Sitemap
-
-SITEMAP = {
-
-    'format': 'xml',
-
-    'priorities': {
-
-        'articles': 0.5,
-
-        'indexes': 0.5,
-
-        'pages': 0.5
-
-    },
-
-    'changefreqs': {
-
-        'articles': 'monthly',
-
-        'indexes': 'daily',
-
-        'pages': 'monthly'
-
-    }
-
-}
-
-HOME_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/mjeanettestein/'),
+         ('github', 'https://github.com/datastein'))
 
