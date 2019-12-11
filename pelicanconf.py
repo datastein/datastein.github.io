@@ -62,6 +62,7 @@ PLUGINS = ['ipynb.markup']
 #         ('github', 'https://github.com/datastein'))
 
 #Uncomment for attila theme
+THEME = 'attila'
 PLUGIN_PATH = './plugins'
 PLUGINS = [
 
