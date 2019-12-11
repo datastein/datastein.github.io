@@ -42,135 +42,24 @@ PLUGIN_PATH = './plugins'
 
 # THEMES: Here is me playing with a few themes
 
-#Uncomment for Flex
-#PLUGIN_PATH = './plugins'
-#PLUGINS = ['ipynb.markup']
-#THEME = 'Flex'
-#STATIC_PATHS = ['img']
+Uncomment for Flex
+PLUGIN_PATH = './plugins'
+PLUGINS = ['ipynb.markup']
+THEME = 'Flex'
+STATIC_PATHS = ['img']
 
-#AUTHOR = 'Jeanette Stein'
-#SITEURL = 'https://datastein.github.io'
-#SITENAME = 'Jeanette\'s Data Blog'
-#SITETITLE = 'Jeanette\'s Data Blog'
-#SITESUBTITLE = 'Blogging in Seattle'
-#SITEDESCRIPTION = 'Jeanette\'s Thoughts and Writings'
-#SITELOGO = SITEURL + '/img/JS_profile.png'
-##SITELOGO = SITEURL + '/images/JS_profile.png'
-#BROWSER_COLOR = '#1569C7'
-
-#SOCIAL = (('linkedin', 'https://www.linkedin.com/in/mjeanettestein/'),
-#         ('github', 'https://github.com/datastein'))
-
-
-THEME = 'attila'
-PLUGINS = [
-
-  'sitemap',
-
-  'neighbors',
-
-  'assets'
-
-]
-
-
-
-# Sitemap
+AUTHOR = 'Jeanette Stein'
 SITEURL = 'https://datastein.github.io'
-SITEPIC= SITEURL + '/img/Seattle_Skyline_F.jpg'
+SITENAME = 'Jeanette\'s Data Blog'
+SITETITLE = 'Jeanette\'s Data Blog'
+SITESUBTITLE = 'Blogging in Seattle'
+SITEDESCRIPTION = 'Jeanette\'s Thoughts and Writings'
+SITELOGO = SITEURL + '/img/JS_profile.png'
+#SITELOGO = SITEURL + '/images/JS_profile.png'
+BROWSER_COLOR = '#1569C7'
 
-SITEMAP = {
-
-    'format': 'xml',
-
-    'priorities': {
-
-        'articles': 0.5,
-
-        'indexes': 0.5,
-
-        'pages': 0.5
-
-    },
-
-    'changefreqs': {
-
-        'articles': 'monthly',
-
-        'indexes': 'daily',
-
-        'pages': 'monthly'
-
-    }
-}
-### Theme specific settings
-# To set background image for the home page.
-
-HOME_COVER = SITEPIC
-SITEAUT = SITEURL + '/img/jsteinpic.jpg'
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/mjeanettestein/'),
+         ('github', 'https://github.com/datastein'))
 
 
 
-# Custom Header
-
-
-
-HEADER_COVERS_BY_TAG = {'cupcake': SITEAUT, 'general':HOME_COVER}
-
-
-
-AUTHORS_BIO = {
-
-  "zutrinken": {
-
-    "name": "Zutrinken",
-
-    "cover": HOME_COVER,
-
-    "image": SITEAUT,
-
-    "website": "https://datastein.github.io",
-
-    "linkedin": "unavailable",
-
-    "github": "arulrajnet",
-
-    "location": "Chennai",
-
-    "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
-
-  }
-
-}
-
-
-
-COLOR_SCHEME_CSS = 'github.css'
-
-
-
-CSS_OVERRIDE = ['assets/css/myblog.css']
-
-
-
-# Jinja config - Pelican 4
-
-JINJA_ENVIRONMENT = {
-
-  'extensions' :[
-
-    'jinja2.ext.loopcontrols',
-
-    'jinja2.ext.i18n',
-
-    'jinja2.ext.with_',
-
-    'jinja2.ext.do'
-
-  ]
-
-}
-
-
-
-JINJA_FILTERS = {'max': max}
