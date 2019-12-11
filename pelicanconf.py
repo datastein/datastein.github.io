@@ -64,6 +64,7 @@ PLUGIN_PATH = './plugins'
 # Theme Attila
 #***************************************
 
+THEME = 'attila'
 
 PAGINATION_PATTERNS = (
 
