@@ -42,7 +42,7 @@ PLUGIN_PATH = './plugins'
 
 # THEMES: Here is me playing with a few themes
 
-Uncomment for Flex
+#Uncomment for Flex
 PLUGIN_PATH = './plugins'
 PLUGINS = ['ipynb.markup']
 THEME = 'Flex'
